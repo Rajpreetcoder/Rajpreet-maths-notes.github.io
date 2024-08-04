@@ -1,4 +1,4 @@
-# Taylor Series
+Taylor Series
 
  It is the function of an infinite sum of terms in increasing order of degree. Taylor series of **Polynomial** function is a **Polynomial**. 
 
@@ -36,8 +36,11 @@ $$
  
 **Solution**
 We need to find f(2), f'(2), f''(2),........ Taking derivatives we get
-      
-    $f(x)=x^(-1)$
+
+$$ 
+\frac{f(2)+ f'(2) (x-2) +\frac{f''(2)}{2!} (x-a)^2 +.... +\frac{f^n}{n!} (x-2) ^n+...,      
+$$
+
     
       
       
