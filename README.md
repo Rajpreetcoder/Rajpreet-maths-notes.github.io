@@ -37,7 +37,7 @@ $$
 **Solution**
 We need to find f(2), f'(2), f''(2),........ Taking derivatives we get
       
-    $f(x) = x^(-1)$
+    $f(x)=x^(-1)$
     
       
       
