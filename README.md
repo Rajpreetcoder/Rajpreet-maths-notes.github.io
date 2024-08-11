@@ -302,10 +302,7 @@ Since the limit along any path is the same, the limit exists and equal to zero w
 1. **I.**  
 \[
 \lim_{y \to 0} \frac{x}{\sqrt{x^2 + y^2}} = 0
-\]             
-     
-Here is the content from the images you provided, written in Markdown:
-
+\]            
 --- 
 Example 6: Examine for continuity at origin of the function defined by:
 
