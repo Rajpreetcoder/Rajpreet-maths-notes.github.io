@@ -271,7 +271,38 @@ Thus L.H.S. \( = -1 \neq 1 = \) R.H.S.
 \]
 
 Since the limit along the last path \( y = mx^2 \) depends on \( m \), the limit does not exist.
-             
+
+#### Continuity
+
+**Example 4:** If \( f(x, y) = \frac{x^3y}{x^2 + y^2} \) when \( x \neq 0, y \neq 0 \) and \( f(x, y) = 0 \) when \( x = 0, y = 0 \), find out whether the function \( f(x, y) \) is continuous at origin.
+
+**Solution:** First calculate the limit of the function:
+
+1. **I.**  
+\[
+\lim_{y \to 0} \frac{x^3y}{x^2 + y^2} = \lim_{y \to 0} 0 = 0
+\]
+
+2. **II.**  
+\[
+\lim_{x \to 0} \frac{x^3y}{x^2 + y^2} = \lim_{x \to 0} 0 = 0
+\]
+
+3. **III.**  
+\[
+\lim_{x \to 0} \lim_{y \to 0} \frac{mx^3y}{\left(1 + m^2x^2\right)^2} = \lim_{x \to 0} \frac{mx^3}{\left(1 + m^2x^2\right)^2} = 0
+\]
+
+Since the limit along any path is the same, the limit exists and equal to zero which is the value of the function \( f(x, y) \) at the origin. Hence the function \( f \) is continuous at the origin.
+
+**Example 5:** Discuss the continuity of the function \( f(x, y) = \frac{x^3y}{x^2 + y^2} \) when \( x \neq 0, y \neq 0 \) and \( f(x, y) = 2 \) when \( x = 0, y = 0 \).
+
+**Solution:** At first, evaluate the limit
+
+1. **I.**  
+\[
+\lim_{y \to 0} \frac{x}{\sqrt{x^2 + y^2}} = 0
+\]             
      
      
      
