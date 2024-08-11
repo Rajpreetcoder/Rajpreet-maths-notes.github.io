@@ -307,33 +307,6 @@ Since the limit along any path is the same, the limit exists and equal to zero w
 Here is the content from the images you provided, written in Markdown:
 
 --- 
-
-### 3.5 PARTIAL DIFFERENTIATION
-
-Hint: \( \lim y = me, depends on \( m \), so limit does not exist.
-
-Find out (and give reason) whether \( f(x, y) \) is continuous at \( (0, 0) \) if \( f(0, 0) = 0 \) and for \( (x, y) \neq 0 \) the function \( f \) is equal to:
-
-**Exercise 12.** 
-- (a) Is the function \( f(x, y) = \frac{xy(x^2 - y^2)}{x^2 + y^2} \) continuous at origin? 
-  - Ans: Not continuous; limit does not exist.
-- (b) Redefine \( f(0, 0) = 0 \) to make it continuous.
-  - Ans: \( f(0, 0) = 0 \), so \( f \) becomes continuous at origin.
-
-**Exercise 13.**
-- If \( f(x, y) = x^4 + y^2 \) determine where the function is continuous.
-  - Ans: Continuous for all \( x \) and \( y \).
-
-**Exercise 14.**
-- If \( f(x, y) = \frac{15xy}{x^2 + y^2} \), show that \( f \) is discontinuous at origin.
-  - Ans: Discontinuous at origin.
-
-**Exercise 15.**
-- Given \( f(x, y) = x^3 + 3y^2 + 2x \) for every \( x, y \) except at \( (2, 3) \), determine if it is continuous at \( (2, 3) \).
-  - Ans: Discontinuous at \( (2, 3) \), redefined as \( f(2, 3) = 42 \).
-
----
-
 Example 6: Examine for continuity at origin of the function defined by:
 
 \[
@@ -361,8 +334,29 @@ Evaluate the following limits:
 
 2. \( \lim_{(x,y) \to (0,0)} \frac{x^2 + y^2}{x^2 + y^2} \)
    - Ans: \( 3 \)
-### 3.6 HIGHER ENGINEERING MATHEMATICS—II
+Hint: \( \lim y = me, depends on \( m \), so limit does not exist.
 
+Find out (and give reason) whether \( f(x, y) \) is continuous at \( (0, 0) \) if \( f(0, 0) = 0 \) and for \( (x, y) \neq 0 \) the function \( f \) is equal to:
+
+**Exercise 12.** 
+- (a) Is the function \( f(x, y) = \frac{xy(x^2 - y^2)}{x^2 + y^2} \) continuous at origin? 
+  - Ans: Not continuous; limit does not exist.
+- (b) Redefine \( f(0, 0) = 0 \) to make it continuous.
+  - Ans: \( f(0, 0) = 0 \), so \( f \) becomes continuous at origin.
+
+**Exercise 13.**
+- If \( f(x, y) = x^4 + y^2 \) determine where the function is continuous.
+  - Ans: Continuous for all \( x \) and \( y \).
+
+**Exercise 14.**
+- If \( f(x, y) = \frac{15xy}{x^2 + y^2} \), show that \( f \) is discontinuous at origin.
+  - Ans: Discontinuous at origin.
+
+**Exercise 15.**
+- Given \( f(x, y) = x^3 + 3y^2 + 2x \) for every \( x, y \) except at \( (2, 3) \), determine if it is continuous at \( (2, 3) \).
+  - Ans: Discontinuous at \( (2, 3) \), redefined as \( f(2, 3) = 42 \).
+
+---
 ![Figure 3.1](#)
 
 We can have: 
