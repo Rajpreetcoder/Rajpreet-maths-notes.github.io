@@ -43,7 +43,48 @@ $$
 
     
       
-      
+# Chapter 3: Partial Differentiation
+
+## Introduction
+
+The real world can be described in mathematical terms using parametric equations and functions such as trigonometric functions which describe cyclic, repetitive activity; exponential, logarithmic and logistic functions which describe growth and decay and polynomial functions which approximate these and most other functions. The problems in operations research, computer science, probability, statistics, fluid dynamics, economics, electricity, etc. deal with functions of two or more independent variables. In this chapter, we study the limit, continuity, partial derivatives of such functions, Euler's theorem, Jacobians which determine the functional dependence and determination of errors and approximations of calculations.
+
+## 3.1 Functions of Several Variables: Limit and Continuity
+
+The area of an ellipse is πab. It depends on two variables *a* and *b*; The total surface area of a rectangular parallelepiped is 2(xy + yz + zx) and it depends on 3 variables x, y, z; The velocity v of a fluid particle moving in space depends on 4 variables x, y, z, t. In transportation problems in operations research, the cost function to be minimized is a function of several (m: n; running into hundreds) variables (where m is the number of origins and n is the number of destinations). Thus, functions of several variables play a vital role in advanced Mathematics.
+
+### Function of Two Variables
+
+If u = f(x, y, z, t) then x, y, z, t are known as the independent variables or arguments and u is known as the 'dependent variable' or 'value' of the function. In this section, we restrict to functions of two and three variables, although the analysis can easily be extended to several variables.
+
+#### Function of Two Variables
+
+If for every x and y a unique value f(x, y) is associated, then f is said to be a function of the two independent variables x and y and is denoted by:
+
+z = f(x, y)
+
+Geometrically, in three-dimensional xyz-coordinate space (1) represents a surface. The values of x and y for which the function is defined is known as the domain of definition of the function:
+
+**Example:**
+
+z = √(a² - x² - y²)
+
+**Domain:** x² + y² ≤ a²
+
+Function not defined when x² + y² > a².
+
+**Example:**
+
+z = xᵐ + yⁿ
+
+**Domain:** x > 0 and y > 0.
+
+#### δ-neighbourhood of a point (a, b)
+
+The δ-neighbourhood of a point (a, b) in the xy-plane is a square with center at (a, b) bound by the four lines x = a - δ, x = a + δ, y = b - δ, y = b + δ, i.e.,
+
+a - δ ≤ x ≤ a + δ  
+b - δ ≤ y ≤ b + δ.      
              
 
  
