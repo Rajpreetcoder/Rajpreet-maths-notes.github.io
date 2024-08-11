@@ -204,6 +204,75 @@ Similarly, taking \( y = 0 \), we get
 \lim_{{x \to 0}} x² = 0
 \]
  
+
+#### Along \( y = mx \)
+\[
+\lim_{x \to 0} \left( x^2 + y^2 \right) = \lim_{x \to 0} \left( x^2 + m^2x^2 \right) 
+\]
+\[
+= \lim_{x \to 0} \left(1 + m^2\right) x^2 = \left(1 + m^2\right) \lim_{x \to 0} x^2 = 0
+\]
+
+#### Along \( y = mx^2 \)
+\[
+\lim_{x \to 0} \left( x^2 + y^2 \right) = \lim_{x \to 0} \left( x^2 \left(1 + m^2x^2 \right) \right) = 0
+\]
+Since the value of the limit along any path is the same, the limit exists and the limit value is zero.
+
+**Example 2:** If \( f(x, y) = \frac{y^2 - x^2}{x^2 + y^2} \), show that
+\[
+\lim_{(x, y) \to (0, 0)} \left| f(x, y) \right| \neq \lim_{(x, y) \to (0, 0)} f(x, y)
+\]
+
+**Solution:**
+
+**L.H.S. of the inequality:**
+
+\[
+\lim_{x \to 0} \lim_{y \to 0} \left| f(x, y) \right| = \lim_{x \to 0} \lim_{y \to 0} \left| \frac{y^2 - x^2}{x^2 + y^2} \right| = \lim_{x \to 0} \frac{x^2 - x^2}{x^2 + y^2}
+\]
+
+\[
+= \lim_{x \to 0} \frac{x^2}{x^2} \times \lim_{y \to 0} 1 - 1 = 1 - 1 = 0
+\]
+
+**R.H.S. of the inequality:**
+
+\[
+\lim_{y \to 0} \lim_{x \to 0} \left| f(x, y) \right| = \lim_{y \to 0} \lim_{x \to 0} \frac{y^2 - x^2}{x^2 + y^2} = \lim_{y \to 0} \frac{x^2}{x^2 + y^2}
+\]
+
+\[
+= \lim_{y \to 0} \left[ \frac{x^2}{x^2 + y^2} \right] = 1 - 1 = 0
+\]
+Thus L.H.S. \( = -1 \neq 1 = \) R.H.S.  
+\[ 
+\text{[Note: Since the limits along two different paths are not the same, the limit does not exist.]}
+\]
+
+**Example 3:** Evaluate  
+\[ 
+\lim_{(x, y) \to (0, 0)} \frac{x^2y}{(x^2 + y^2)^2} 
+\]
+
+**Solution:**
+
+1. **I.**  
+\[
+\lim_{y \to 0} \frac{x^2y}{(x^2 + y^2)^2} = \lim_{y \to 0} 0 = 0
+\]
+
+2. **II.**  
+\[
+\lim_{x \to 0} \frac{x^2y}{(x^2 + y^2)^2} = \lim_{x \to 0} 0 = 0
+\]
+
+3. **III.**  
+\[
+\lim_{x \to 0} \lim_{y \to 0} \frac{mx^3}{\left(1 + m^2x^2\right)^2} = \lim_{x \to 0} \frac{mx^3}{\left(1 + m^2x^2\right)^2} = 0
+\]
+
+Since the limit along the last path \( y = mx^2 \) depends on \( m \), the limit does not exist.
              
      
      
