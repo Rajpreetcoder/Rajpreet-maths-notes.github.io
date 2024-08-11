@@ -85,9 +85,7 @@ The δ-neighbourhood of a point (a, b) in the xy-plane is a square with center a
 
 a - δ ≤ x ≤ a + δ  
 b - δ ≤ y ≤ b + δ.      
-             
-### 3.2 Higher Engineering Mathematics—II
-
+           
 **Note:** Neighbourhood of a point (a, b) may also be defined as a circular disk with center at (a, b) and of radius δ given by
 
 \[
