@@ -304,6 +304,130 @@ Since the limit along any path is the same, the limit exists and equal to zero w
 \lim_{y \to 0} \frac{x}{\sqrt{x^2 + y^2}} = 0
 \]             
      
-     
+Here is the content from the images you provided, written in Markdown:
+
+---
+
+### 3.6 HIGHER ENGINEERING MATHEMATICS—II
+
+![Figure 3.1](#)
+
+We can have: 
+
+\[
+\frac{\partial u}{\partial y} = \frac{\partial f}{\partial y} = f_y, \quad \frac{\partial u}{\partial x} = \frac{\partial f}{\partial x} = f_x
+\]
+
+The value of a partial derivative at a point \((a, b, c)\) is denoted by:
+
+\[
+\frac{\partial u}{\partial x}\bigg|_{x=a, y=b, z=c} = \frac{\partial u}{\partial x}(a, b, c) = f_x(a, b, c)
+\]
+
+**Geometrical interpretation of a partial derivative of a function of two variables**: \(z = f(x, y)\) represents the equation of a surface in \(xyz\)-coordinate system. Let APB the curve, which a plane through any point \(P\) on the surface parallel to the \(xz\)-plane, cuts. As point \(P\) moves along this curve APB, its coordinates \(z\) and \(x\) vary while \(y\) remains constant. The slope of the tangent line at \(P\) to APB represents the rate at which \(z\) changes w.r.t. \(x\).
+
+Thus:
+
+\[
+\frac{\partial z}{\partial x} = \tan \alpha = \text{slope of the curve } APB \text{ at the point } P
+\]
+
+Similarly,
+
+\[
+\frac{\partial z}{\partial y} = \tan \beta = \text{slope of the curve } CPD \text{ at } P
+\]
+
+#### Higher Order Partial Derivatives
+
+Partial derivatives of higher order, of a function \(f(x, y, z)\) are calculated by successive differentiation.
+
+Thus if \(u = f(x, y, z)\) then:
+
+\[
+\frac{\partial^2 u}{\partial x \partial y} = \frac{\partial^2 f}{\partial x \partial y} = \frac{\partial}{\partial x} \left(\frac{\partial f}{\partial y}\right) = f_{xy} = f_{12}
+\]
+
+And similarly for other higher-order derivatives.
+
+Note 1: The crossed or mixed partial derivatives \(\frac{\partial^2 u}{\partial y \partial x}\) and \(\frac{\partial^2 u}{\partial x \partial y}\) are in general equal.
+
+\[
+\frac{\partial^2 f}{\partial x \partial y} = \frac{\partial^2 f}{\partial y \partial x}
+\]
+
+Note 2: In the subscript notation, the subscripts are written in the same order in which differentiation is carried out.
+
+Note 3: A function of two variables has two first-order derivatives, four second-order derivatives, and two \(n^{th}\) order derivatives.
+
+#### Worked Out Examples
+
+**Example 1:** Find the first-order partial derivatives \(\frac{\partial u}{\partial x}\) and \(\frac{\partial u}{\partial y}\) when:
+
+a) \(u = e^{x \cos y}\)
+
+b) \(u = \tan^{-1} \frac{y}{x}\)
+
+c) \(u = \ln \left(x^2 + y^2\right)\)
+
+---
+
+### 3.5 PARTIAL DIFFERENTIATION
+
+Hint: \( \lim y = mx \) is not unique, depends on \( m \), so limit does not exist.
+
+Find out (and give reason) whether \( f(x, y) \) is continuous at \( (0, 0) \) if \( f(0, 0) = 0 \) and for \( (x, y) \neq 0 \) the function \( f \) is equal to:
+
+**Exercise 12.** 
+- (a) Is the function \( f(x, y) = \frac{xy(x^2 - y^2)}{x^2 + y^2} \) continuous at origin? 
+  - Ans: Not continuous; limit does not exist.
+- (b) Redefine \( f(0, 0) = 0 \) to make it continuous.
+  - Ans: \( f(0, 0) = 0 \), so \( f \) becomes continuous at origin.
+
+**Exercise 13.**
+- If \( f(x, y) = x^4 + y^2 \) determine where the function is continuous.
+  - Ans: Continuous for all \( x \) and \( y \).
+
+**Exercise 14.**
+- If \( f(x, y) = \frac{15xy}{x^2 + y^2} \), show that \( f \) is discontinuous at origin.
+  - Ans: Discontinuous at origin.
+
+**Exercise 15.**
+- Given \( f(x, y) = x^3 + 3y^2 + 2x \) for every \( x, y \) except at \( (2, 3) \), determine if it is continuous at \( (2, 3) \).
+  - Ans: Discontinuous at \( (2, 3) \), redefined as \( f(2, 3) = 42 \).
+
+---
+
+Example 6: Examine for continuity at origin of the function defined by:
+
+\[
+f(x, y) = \frac{x^2}{\sqrt{x^2 + y^2}}, \text{ for } (x \neq 0, y \neq 0)
+\]
+
+Re-define the function to make it continuous.
+
+**Solution:**
+
+- Initially, find the limit:
+
+\[
+\lim_{x \to 0} \frac{x^2}{\sqrt{x^2 + y^2}} = 0
+\]
+
+Therefore \( f \) is continuous at origin by redefining \( f(0, 0) = 0 \).
+
+**Exercise: Limits**
+
+Evaluate the following limits:
+
+1. \( \lim_{(x,y) \to (0,0)} \frac{x^2 + y^3}{2xy} \)
+   - Ans: \( \frac{3}{2} \)
+
+2. \( \lim_{(x,y) \to (0,0)} \frac{x^2 + y^2}{x^2 + y^2} \)
+   - Ans: \( 3 \)
+
+---
+
+This is a basic conversion of the content into Markdown format. If you need further assistance, feel free to ask!     
      
      
