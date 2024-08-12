@@ -415,6 +415,143 @@ b) \(u = \tan^{-1} \frac{y}{x}\)
 c) \(u = \ln \left(x^2 + y^2\right)\)
 
 ---
+### PARTIAL DIFFERENTIATION — 3.7
+
+#### Solution:
+
+**a.**
+
+\[
+\frac{\partial w}{\partial x} = \cos y \frac{\partial}{\partial x}(e^x) = e^x \cos y
+\]
+
+\[
+\frac{\partial w}{\partial y} = e^x \frac{\partial}{\partial y}(\cos y) = -e^x \sin y
+\]
+
+**b.**
+
+\[
+\frac{\partial w}{\partial x} = \frac{1}{1 + \left(\frac{x}{y}\right)^2} \cdot \frac{\partial}{\partial x} \left(\frac{y}{x}\right) = \frac{-y}{x^2 + y^2}
+\]
+
+\[
+\frac{\partial w}{\partial y} = \frac{1}{1 + \left(\frac{x}{y}\right)^2} \cdot \frac{\partial}{\partial y} \left(\frac{x}{y}\right) = \frac{x}{x^2 + y^2}
+\]
+
+**c.**
+
+\[
+\frac{\partial w}{\partial x} = \frac{1}{\sqrt{x^2 + y^2}} \cdot \frac{1}{2 \sqrt{x^2 + y^2}} \cdot \frac{\partial}{\partial x} \left( x^2 + y^2 \right) = \frac{x}{\sqrt{x^2 + y^2}}
+\]
+
+\[
+\frac{\partial w}{\partial y} = \frac{1}{\sqrt{x^2 + y^2}} \cdot \frac{1}{2 \sqrt{x^2 + y^2}} \cdot \frac{\partial}{\partial y} \left( x^2 + y^2 \right) = \frac{y}{\sqrt{x^2 + y^2}}
+\]
+
+---
+
+### Example 2:
+
+Find the partial derivative of \( f \) with respect to each of the independent variables:
+
+**a.**
+
+\[
+f(x, y, z, w) = x^2e^{2y+3z} \cos(4w)
+\]
+
+\[
+f_x = \frac{\partial f}{\partial x} = 2x e^{2y+3z} \cos(4w)
+\]
+
+\[
+f_y = 2x^2 e^{2y+3z} \cos(4w) \cdot 2
+\]
+
+\[
+f_z = 2x^2 e^{2y+3z} \cos(4w) \cdot 3
+\]
+
+\[
+f_w = 2x^2 e^{2y+3z} \cdot -\sin(4w) \cdot 4
+\]
+
+**b.**
+
+\[
+f(r, \theta, z) = r(2 - \cos 2\theta) / (r^2 + z^2)
+\]
+
+\[
+\frac{\partial f}{\partial r} = \frac{(r^2 - r^2)(2 - \cos 2\theta) - r(2 - \cos 2\theta) \cdot 2r}{(r^2 + z^2)^2}
+\]
+
+---
+
+### Example 3:
+
+Find \( \frac{\partial^3 u}{\partial x \partial y \partial z} \) if \( u = e^{x^2 + y^2 + z^2} \)
+
+**Solution:**
+
+\[
+\frac{\partial u}{\partial x} = 2xe^{x^2 + y^2 + z^2}
+\]
+
+\[
+\frac{\partial^2 u}{\partial y \partial x} = 4xy e^{x^2 + y^2 + z^2}
+\]
+
+\[
+\frac{\partial^3 u}{\partial z \partial y \partial x} = 8xyz e^{x^2 + y^2 + z^2}
+\]
+
+Thus
+
+\[
+\frac{\partial^3 u}{\partial x \partial y \partial z} = 8xyz e^{x^2 + y^2 + z^2}
+\]
+
+---
+
+### Example 4:
+
+Show that \( V(x, y, z) = \cos 3x \cos 4y \sinh 5z \) satisfies Laplace's equation
+
+\[
+\frac{\partial^2 V}{\partial x^2} + \frac{\partial^2 V}{\partial y^2} + \frac{\partial^2 V}{\partial z^2} = 0
+\]
+
+**Solution:**
+
+\[
+V_{xx} = -3 \sin 3x \cdot \cos 4y \cdot \sinh 5z
+\]
+
+\[
+V_{yy} = -16 \cos 3x \cdot \sin 4y \cdot \sinh 5z
+\]
+
+\[
+V_{zz} = 25 \cos 3x \cdot \cos 4y \cdot \sinh 5z
+\]
+
+Adding (1), (2), and (3), we get
+
+\[
+V_{xx} + V_{yy} + V_{zz} = 0
+\]
+
+---
+
+### Example 5:
+
+If \( u = e^{\alpha t} \cos(a \ln r) \), show that
+
+\[
+\frac{\partial^2 u}{\partial r^2} + \frac{1}{r} \frac{\partial u}{\partial r} + \frac{1}{r^2} \frac{\partial^2 u}{\partial \theta^2} = 0
+\]
 ### 3.8 HIGHER ENGINEERING MATHEMATICS—II
 
 #### Solution:
