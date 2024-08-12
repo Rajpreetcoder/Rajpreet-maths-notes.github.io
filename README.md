@@ -382,7 +382,83 @@ Initially,⬤
 22. \( \frac{(x^2-y^2)}{\sqrt{x^2+y^2}} \)
 
     Hint: continuous.
+## 3.6 HIGHER ENGINEERING MATHEMATICS - II
 
+![Fig. 3.1](image-url)
+
+we can have \( \frac{\partial u}{\partial y} = f_y = \frac{\partial f}{\partial y} \), etc. The value of a partial derivative at a point \((a, b, c)\) is denoted by
+
+\[
+\frac{\partial u}{\partial x}\bigg|_{x=a, y=b, z=c} = \frac{\partial u}{\partial x}(a, b, c) = f_x(a, b, c)
+\]
+
+### Geometrical interpretation of a partial derivative of a function of two variables: \( z = f(x, y) \) represents the equation of a surface in \( xyz \)-coordinate system. Let APB the curve, which a plane through any point P on the surface parallel to the \( xz \)-plane, cuts. As point P moves along this curve APB, its coordinates \( z \) and \( x \) vary while \( y \) remains constant. The slope of the tangent line at P to APB represents the rate at which \( z \) changes w.r.t. \( x \).
+
+Thus
+
+\[
+\frac{\partial z}{\partial x} = \tan \alpha = \text{slope of the curve } APB \text{ at the point } P
+\]
+
+Similarly,
+
+\[
+\frac{\partial z}{\partial y} = \tan \beta = \text{slope of the curve } CPD \text{ at } P.
+\]
+
+### Higher Order Partial Derivatives
+
+Partial derivatives of higher order, of a function \( f(x, y, z) \), are calculated by successive differentiation. Thus if \( u = f(x, y, z) \) then
+
+\[
+\frac{\partial^2 u}{\partial y \partial x} = \frac{\partial}{\partial y}\left(\frac{\partial u}{\partial x}\right) = f_{xy} = f_{12}
+\]
+
+\[
+\frac{\partial^2 u}{\partial x^2} = \frac{\partial}{\partial x}\left(\frac{\partial u}{\partial x}\right) = f_{xx} = f_{11}
+\]
+
+\[
+\frac{\partial^2 u}{\partial x \partial y} = \frac{\partial}{\partial x}\left(\frac{\partial u}{\partial y}\right) = f_{yx} = f_{21}
+\]
+
+\[
+\frac{\partial^2 u}{\partial y^2} = \frac{\partial}{\partial y}\left(\frac{\partial u}{\partial y}\right) = f_{yy} = f_{22}
+\]
+
+\[
+\frac{\partial^3 u}{\partial x \partial y \partial z} = \frac{\partial}{\partial z}\left(\frac{\partial^2 u}{\partial y \partial x}\right) = f_{xyz} = f_{123}
+\]
+
+\[
+\frac{\partial^4 u}{\partial x \partial y \partial z^2} = \frac{\partial}{\partial z^2}\left(\frac{\partial^3 u}{\partial y \partial x \partial z}\right) = f_{xyz2} = f_{1232}
+\]
+
+The partial derivative \( \frac{\partial u}{\partial x} \) obtained by differentiating once is known as first-order partial derivative, while \( \frac{\partial^2 u}{\partial y \partial x}, \frac{\partial^2 u}{\partial y^2}, \frac{\partial^3 u}{\partial y \partial x \partial z} \) which are obtained by differentiating twice are known as second-order derivatives. 3rd order, 4th order derivatives involve 3, 4 times differentiation respectively.
+
+**Note 1:** The crossed or mixed partial derivatives \( \frac{\partial^2 f}{\partial y \partial x} \) and \( \frac{\partial^2 f}{\partial x \partial y} \) are in general, equal
+
+\[
+\frac{\partial^2 f}{\partial y \partial x} = \frac{\partial^2 f}{\partial x \partial y}
+\]
+
+i.e., the order of differentiation is immaterial if the derivatives involved are continuous.
+
+**Note 2:** In the subscript notation, the subscripts are written in the same order in which differentiation is carried out, while in the '∂' notation the order is opposite, for example,
+
+\[
+\frac{\partial^2 u}{\partial y \partial x} = \frac{\partial}{\partial y}\left(\frac{\partial u}{\partial x}\right) = f_{xy}
+\]
+
+**Note 3:** A function of 2 variables has two first-order derivatives, four second-order derivatives and \( 2^n \) of nth-order derivatives. A function of m independent variables will have \( m^n \) derivatives of order n.
+
+### WORKED OUT EXAMPLES
+
+**Example 1:** Find the first order partial derivatives \( \frac{\partial u}{\partial x} \) and \( \frac{\partial u}{\partial y} \) when:
+
+a) \( u = e^{x \cos y} \) 
+b) \( u = \tan^{-1}\left(\frac{y}{x}\right) \) 
+c) \( u = \ln \left(\sqrt{x^2 + y^2}\right) \)
 ## 3.2 PARTIAL DIFFERENTIATION
 
 A partial derivative of a function of several variables is the ordinary derivative with respect to one of the variables when all the remaining variables are held constant. Partial differentiation is the process of finding partial derivatives. All the rules of differentiation applicable to functions of a single independent variable are also applicable in partial differentiation with the only difference that when the function is partially with respect to one variable, all the other variables are treated (temporarily) as constants.
