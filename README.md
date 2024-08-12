@@ -304,26 +304,132 @@ Since the limit along any path is the same, the limit exists and equal to zero w
 \lim_{y \to 0} \frac{x}{\sqrt{x^2 + y^2}} = 0
 \]            
 --- 
-### 3.4 — HIGHER ENGINEERING MATHEMATICS—II
+#### II.
+\[
+\lim_{x \to 0} \frac{x}{\sqrt{x^2 + y^2}} = \lim_{y \to 0} \frac{x}{\sqrt{x^2}} = \lim_{y \to 0} \frac{x}{|x|} = 1 = 1
+\]
+Since the limits along paths I and II are different, the limit itself does not exist. Therefore the function is discontinuous at the origin.
 
+##### Example 6:
+Examine for continuity at origin of the function defined by
+\[
+f(x, y) = \frac{x^2}{\sqrt{x^2 + y^2}}, \quad \text{for } (x \neq 0, y \neq 0)
+\]
+\[
+= 3, \quad \text{for } (x = 0, y = 0)
+\]
+Redefine the function to make it continuous.
+
+###### Solution:
+Initially, find the limit
+\[
+\lim_{(x, y) \to (0, 0)} \frac{x^2}{\sqrt{x^2 + y^2}}
+\]
+
+**I.** \[
+\lim_{y \to 0} \frac{x^2}{\sqrt{x^2 + y^2}} = \lim_{y \to 0} \frac{x^2}{|x|} = \lim_{y \to 0} x = 0
+\]
+
+**II.** \[
+\lim_{x \to 0} \frac{x^2}{\sqrt{x^2 + y^2}} = \lim_{x \to 0} \frac{x^2}{|y|} = 0
+\]
+
+**III.** \[
+\lim_{x \to 0} \frac{x^2}{\sqrt{x^2 + y^2}} = \lim_{x \to 0} \frac{x^2}{\sqrt{1 + m^2}} = \lim_{x \to 0} \frac{x^2}{1 + m^2} = 0
+\]
+
+**IV.** \[
+\lim_{y \to 0} \frac{x^2}{\sqrt{x^2 + y^2}} = \lim_{y \to 0} \frac{x^2}{\sqrt{(1 + mx^2m^2)}} = 0
+\]
+
+Thus the limit along any path exists and is the same and the common value equals to zero i.e.,
+\[
+\lim_{(x, y) \to (0, 0)} \frac{x^2}{\sqrt{x^2 + y^2}} = 0
+\]
+However the value of the functions at origin is 3 i.e.,
+\[
+f(0, 0) = 3
+\]
+Therefore \(f\) is discontinuous at origin because
+\[
+\lim_{(x, y) \to (0, 0)} \frac{x^2}{\sqrt{x^2 + y^2}} \neq 3 = f(0, 0)
+\]
+The function can be *made* continuous at origin by redefining the function as \(f(0, 0) = 0\), since in this case
+\[
+\lim_{(x, y) \to (0, 0)} \frac{x^2}{\sqrt{x^2 + y^2}} = 0 = f(0, 0).
+\]
+
+### EXERCISE
+
+#### Limits
+Evaluate the following limits:
+
+1. \[
+\lim_{(x, y) \to (0, 0)} \frac{x^2 + y^3}{2x^2y}
+\]
+**Ans.** \(\frac{31}{24}\)
+
+2. \[
+\lim_{(x, y) \to (0, 0)} \frac{2x^2y}{3x + y^2}
+\]
+**Ans.** \(\frac{2}{3}\)
+
+3. \[
+\lim_{(x, y) \to (0, 0)} \frac{3xy + y}{x + y}
+\]
+**Ans.** does not exist
+
+**Hint:** Along path \(y = mx\), limit is \(\frac{m}{m + 1}\) which is different for different values of \(m\).
+
+4. \[
+\lim_{(x, y) \to (0, 0)} \frac{2x^2 + y^2}{2x^2 + y^2}
+\]
+**Ans.** \(\frac{1}{2}\)
+
+5. \[
+\lim_{(x, y) \to (0, 0)} \frac{x}{|y|}
+\]
+**Ans.** does not exist
+
+6. \[
+\lim_{(x, y) \to (0, 0)} \frac{x}{\sqrt{x^2 + y^2}}
+\]
+**Ans.** does not exist
+
+7. \[
+\lim_{(x, y) \to (0, 0)} \frac{x^2 + y^2}{xy}
+\]
+**Ans.** does not exist
+
+8. \[
+\lim_{(x, y) \to (0, 0)} \frac{2xy - 3}{xy + 2}
+\]
+**Ans.** 0
+
+Show that 
+\[
+\lim_{x \to 0} \left[ \lim_{y \to 0} f(x, y) \right] \neq \lim_{y \to 0} \left[ \lim_{x \to 0} f(x, y) \right]
+\]
+if
+
+9. \(f(x, y) = \frac{x^2 - y}{x + y}\) **Ans.** \(\frac{1}{1} \neq -1\)
+
+10. \(f(x, y) = \frac{xy}{x + y}\) **Ans.** \(\frac{1}{1} \neq -1\)
+
+#### Continuity
+11. If 
+\[
+f(x, y) = \frac{(x^2 - y^2)}{\sqrt{x^2 + y^2}}, \quad \text{when } x \neq 0, y \neq 0
+\]
+\[
+= 0, \quad \text{when } (x = 0, y = 0)
+\]
+show that \(f\) is discontinuous at origin.
 ---
 
 **II.** \(\lim_{x \to 0} \frac{x}{\sqrt{x^2 + y^2}} = \lim_{y \to 0} \frac{x}{\sqrt{x^2}} = \lim_{x \to 0} \frac{x}{|x|} = 1 = 1\)
 
 Since the limits along paths I and II are different, the limit itself does not exist. Therefore the function is discontinuous at the origin.
-
-**Example 6:** Examine for continuity at origin of the function defined by
-
-\[f(x, y) = \frac{x^2}{\sqrt{x^2 + y^2}}\] for \( (x \neq 0, y \neq 0) \)
-
-\[= 3,\text{ for } (x = 0, y = 0)\]
-
-Redefine the function to make it continuous.
-
-**Solution:**
-
-Initially,⬤
-## PARTIAL DIFFERENTIATION - 3.5
 
 12. (a) Is the function \( f(x, y) = \frac{xy^2}{x^2+y^2} \) when \((x, y) \neq (0, 0)\) and \( f(0, 0) = 4 \) continuous at origin, O? Redefine if necessary to make it continuous at O.
 
@@ -382,7 +488,6 @@ Initially,⬤
 22. \( \frac{(x^2-y^2)}{\sqrt{x^2+y^2}} \)
 
     Hint: continuous.
-## 3.6 HIGHER ENGINEERING MATHEMATICS - II
 
 ![Fig. 3.1](image-url)
 
@@ -480,8 +585,6 @@ Consider a function \( f(x, y, z) \) of the three independent variables \( x, y,
 
 
 ---
-### PARTIAL DIFFERENTIATION — 3.7
-
 #### Solution:
 
 **a.**
@@ -617,9 +720,7 @@ If \( u = e^{\alpha t} \cos(a \ln r) \), show that
 \[
 \frac{\partial^2 u}{\partial r^2} + \frac{1}{r} \frac{\partial u}{\partial r} + \frac{1}{r^2} \frac{\partial^2 u}{\partial \theta^2} = 0
 \]
-### 3.8 HIGHER ENGINEERING MATHEMATICS—II
-
-#### Solution:
+## Solution:
 
 \[
 u = e^{\alpha t} (\text{cos }a \ln r) \quad (1)
@@ -702,8 +803,6 @@ u_{xx} + 2u_{xy} + u_{yy} = \frac{\partial^2 u}{\partial x^2} + 2 \frac{\partial
 \[
 \frac{\partial^2 w}{\partial x \partial y} = \frac{\partial^2 w}{\partial y^2}
 \]
- ## PARTIAL DIFFERENTIATION — 3.9
-
 4. Verify that \( w_{xy} = w_{yx} \) when 
    a. \( u = \ln(2x + 3y) \)
    b. \( w = x^3y^2 + 3x^2y^4 \)
