@@ -416,5 +416,74 @@ c) \(u = \ln \left(x^2 + y^2\right)\)
 
 ---
 
-     
+ ## PARTIAL DIFFERENTIATION — 3.9
+
+4. Verify that \( w_{xy} = w_{yx} \) when 
+   a. \( u = \ln(2x + 3y) \)
+   b. \( w = x^3y^2 + 3x^2y^4 \)
+   c. \( w = \tan^{-1} \frac{y}{x} \)
+   d. \( w = \ln(x \sin x + \sin y) \)
+
+5. Show that \( u_x + u_y = u \) if \( u = e^{x+y}/(e^x + e^y) \).
+
+6. Prove that \( w = f(x + ct) + g(x - ct) \) satisfies the wave equation \( \frac{\partial^2 w}{\partial t^2} = c^2 \frac{\partial^2 w}{\partial x^2} \) where c is a constant. Verify this when
+   \( w = 7\sin(3x + 5ct) + 9\cosh(5x - 5ct) \).
+
+7. Show that \( w_{xx} + w_{tt} = 0 \) if
+   \( w = \sin(2x - 3ct) \).
+
+8. If \( w = x^4 + y^4 + z^4 + 2xyz \), prove that
+   \( w_{xx} + w_{yy} + w_{zz} = 6(x + y + z) \).
+
+9. Verify that V satisfies Laplace's equation
+   \[
+   \frac{\partial^2 V}{\partial x^2} + \frac{\partial^2 V}{\partial y^2} + \frac{\partial^2 V}{\partial z^2} = 0
+   \]
+   if (a) \( V = x^2 + y^2 - 2z^2 \), (b) \( V = e^{x^2 + 4y} \cos 5z \), 
+   (c) \( V = \ln(x^2 + y^2 + z^2) \).
+
+10. Find \( \frac{\partial^3 u}{\partial x \partial y \partial z} \) if \( u = e^{xyz} \).
+
+11. Show that \( w_{xx} + w_{yy} + w_{zz} = 0 \) when
+    \[
+    w = \frac{y}{x} + \frac{z}{x} + \frac{x}{y} + \frac{z}{y} + \frac{x}{z} + \frac{y}{z}
+    \]
+
+12. If \( u = r^m \) prove that
+    \[
+    u_{xx} + u_{yy} + u_{zz} = m(m + 1)r^{m - 2}
+    \]
+    where \( r^2 = x^2 + y^2 + z^2 \).
+
+13. For \( m = 2\) or \( 3\) show that \( u = r^m(3 \cos^2 \theta - 1) \) satisfies the differential equation
+    \[
+    \frac{\partial}{\partial r} \left( r^2 \frac{\partial u}{\partial r} \right) + \frac{1}{\sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial u}{\partial \theta} \right) = 0
+    \]
+
+14. Prove that \( \left( \frac{\partial^2 u}{\partial r^2} + \frac{1}{r} \frac{\partial u}{\partial r} + \frac{1}{r^2} \frac{\partial^2 u}{\partial \theta^2} \right) = 0 \) if
+    \[
+    u = \ln(x^2 + y^2) + \left( x + \frac{1}{x^2 + y^2} \right)
+    \]
+
+   **Hint:** Prove and use the result \( u_x + u_y + u_z = \left( \frac{1}{x + y + z} \right) \).
+
+15. Prove (the Cauchy-Riemann equations in polar coordinates) \( r u_r = v_{\theta}, r v_r = -u_{\theta} \) when
+    \[
+    u = r \cos (\cos r), \quad v = r \sin (\sin \theta)
+    \]
+
+16. Show that \( v_{xx} + v_{yy} - x^2 - y^2 \).
+
+17. **Hint:** Solve for \( z = (y^2 - x^2) \ln (x - y) \).
+    If \( u = (x^2 + y^2) \ln (x - y) \).
+
+18. Prove that \( f(x, t) = a \sin bx \cdot \cos bt \) satisfies
+    \[
+    \frac{\partial^2 f}{\partial t^2} = c^2 \frac{\partial^2 f}{\partial x^2}
+    \]
+    where \( c = b \).
+
+19. Show that \( u_x + u_y = 0 \) if \( u = x - y \).
+
+ 
      
