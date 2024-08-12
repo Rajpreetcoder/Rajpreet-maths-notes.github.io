@@ -304,6 +304,25 @@ Since the limit along any path is the same, the limit exists and equal to zero w
 \lim_{y \to 0} \frac{x}{\sqrt{x^2 + y^2}} = 0
 \]            
 --- 
+### 3.4 — HIGHER ENGINEERING MATHEMATICS—II
+
+---
+
+**II.** \(\lim_{x \to 0} \frac{x}{\sqrt{x^2 + y^2}} = \lim_{y \to 0} \frac{x}{\sqrt{x^2}} = \lim_{x \to 0} \frac{x}{|x|} = 1 = 1\)
+
+Since the limits along paths I and II are different, the limit itself does not exist. Therefore the function is discontinuous at the origin.
+
+**Example 6:** Examine for continuity at origin of the function defined by
+
+\[f(x, y) = \frac{x^2}{\sqrt{x^2 + y^2}}\] for \( (x \neq 0, y \neq 0) \)
+
+\[= 3,\text{ for } (x = 0, y = 0)\]
+
+Redefine the function to make it continuous.
+
+**Solution:**
+
+Initially,⬤
 Example 6: Examine for continuity at origin of the function defined by:
 
 \[
