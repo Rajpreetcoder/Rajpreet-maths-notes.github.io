@@ -323,115 +323,85 @@ Redefine the function to make it continuous.
 **Solution:**
 
 Initially,⬤
-Example 6: Examine for continuity at origin of the function defined by:
+## PARTIAL DIFFERENTIATION - 3.5
 
-\[
-f(x, y) = \frac{x^2}{\sqrt{x^2 + y^2}}, \text{ for } (x \neq 0, y \neq 0)
-\]
+12. (a) Is the function \( f(x, y) = \frac{xy^2}{x^2+y^2} \) when \((x, y) \neq (0, 0)\) and \( f(0, 0) = 4 \) continuous at origin, O? Redefine if necessary to make it continuous at O.
 
-Re-define the function to make it continuous.
+    Ans. a. not continuous; \(\lim = 0 \neq 4 = f(0, 0)\)
 
-**Solution:**
+         b. continuous if \( f(0, 0) = 0 \)
 
-- Initially, find the limit:
+13. If \( f(x, y) = x^2 + y^2 \) determine where the function is continuous.
 
-\[
-\lim_{x \to 0} \frac{x^2}{\sqrt{x^2 + y^2}} = 0
-\]
+    Ans. continuous for every x and y i.e., everywhere
 
-Therefore \( f \) is continuous at origin by redefining \( f(0, 0) = 0 \).
+14. If \( f(x, y) = \frac{xy^2}{x^2+y^4} \), for \((x, y) \neq (0, 0)\)
 
-**Exercise: Limits**
+    \( \quad \quad \quad \quad = 15 \), at \((0, 0)\)
 
-Evaluate the following limits:
+    show that \( f \) is discontinuous at origin.
 
-1. \( \lim_{(x,y) \to (0,0)} \frac{x^2 + y^3}{2xy} \)
-   - Ans: \( \frac{3}{2} \)
+    Ans. \( f \) discontinuous at origin.
 
-2. \( \lim_{(x,y) \to (0,0)} \frac{x^2 + y^2}{x^2 + y^2} \)
-   - Ans: \( 3 \)
-Hint: \( \lim y = me, depends on \( m \), so limit does not exist.
+15. Find whether \( f(x, y) = \frac{x^2y}{x^2+y^2} \) is continuous at \((0, 0)\) when \( f(a) = 0 \); \( f(b) = 15 \); \( f(0, 0) = 0 \).
 
-Find out (and give reason) whether \( f(x, y) \) is continuous at \( (0, 0) \) if \( f(0, 0) = 0 \) and for \( (x, y) \neq 0 \) the function \( f \) is equal to:
+    Ans. a. not continuous; \(\lim = 0 \neq 15 = f(0, 0)\)
 
-**Exercise 12.** 
-- (a) Is the function \( f(x, y) = \frac{xy(x^2 - y^2)}{x^2 + y^2} \) continuous at origin? 
-  - Ans: Not continuous; limit does not exist.
-- (b) Redefine \( f(0, 0) = 0 \) to make it continuous.
-  - Ans: \( f(0, 0) = 0 \), so \( f \) becomes continuous at origin.
+         b. continuous since \(\lim = 0 = 0 = f(0, 0)\)
 
-**Exercise 13.**
-- If \( f(x, y) = x^4 + y^2 \) determine where the function is continuous.
-  - Ans: Continuous for all \( x \) and \( y \).
+16. Given \( f(x, y) = x^3 + 3y^2 + 2x + y \) for every \((x, y)\) except \((2, 3)\) where \( f(2, 3) = 10 \). Examine whether \( f \) is continuous at (a) point (2, 3) (b) at any other points (c) can the function be made continuous at (2, 3) by redefining \( f \) at (2, 3).
 
-**Exercise 14.**
-- If \( f(x, y) = \frac{15xy}{x^2 + y^2} \), show that \( f \) is discontinuous at origin.
-  - Ans: Discontinuous at origin.
+    Ans. a. discontinuous at (2, 3)
 
-**Exercise 15.**
-- Given \( f(x, y) = x^3 + 3y^2 + 2x \) for every \( x, y \) except at \( (2, 3) \), determine if it is continuous at \( (2, 3) \).
-  - Ans: Discontinuous at \( (2, 3) \), redefined as \( f(2, 3) = 42 \).
+         b. continuous for every x and y i.e., everywhere except at (2, 3)
 
----
-![Figure 3.1](#)
+         c. \( f \) becomes continuous by redefining \( f \) at (2, 3) as \( f(2, 3) = 42 \)
 
-We can have: 
+17. a. Prove that \( f(x, y) = \frac{x - y}{x + y} \), \( x \neq y \) is discontinuous at origin when \( f(0, 0) = 0 \)
 
-\[
-\frac{\partial u}{\partial y} = \frac{\partial f}{\partial y} = f_y, \quad \frac{\partial u}{\partial x} = \frac{\partial f}{\partial x} = f_x
-\]
+    Ans. a. discontinuous at origin when \( f(0, 0) = 0 \)
 
-The value of a partial derivative at a point \((a, b, c)\) is denoted by:
+         b. \( f \) can be made continuous by redefining \( f \) at (0, 0) i.e., for any other value of \( f(0, 0) \), then the limit at (0, 0) does not exist.
 
-\[
-\frac{\partial u}{\partial x}\bigg|_{x=a, y=b, z=c} = \frac{\partial u}{\partial x}(a, b, c) = f_x(a, b, c)
-\]
+18. Prove that \( f(x, y) = \frac{xy}{x^2+y^2} \) when \((x, y) \neq (0, 0)\) and \( f(0, 0) = 0 \) is discontinuous at origin.
 
-**Geometrical interpretation of a partial derivative of a function of two variables**: \(z = f(x, y)\) represents the equation of a surface in \(xyz\)-coordinate system. Let APB the curve, which a plane through any point \(P\) on the surface parallel to the \(xz\)-plane, cuts. As point \(P\) moves along this curve APB, its coordinates \(z\) and \(x\) vary while \(y\) remains constant. The slope of the tangent line at \(P\) to APB represents the rate at which \(z\) changes w.r.t. \(x\).
+    Ans. \( f \) is discontinuous at origin.
 
-Thus:
+19. \( \frac{y}{\sqrt{x^2+y^2}} \)
 
-\[
-\frac{\partial z}{\partial x} = \tan \alpha = \text{slope of the curve } APB \text{ at the point } P
-\]
+    Ans. discontinuous
 
-Similarly,
+20. \( \frac{x}{1+\sqrt{x^2+y^2}} \)
 
-\[
-\frac{\partial z}{\partial y} = \tan \beta = \text{slope of the curve } CPD \text{ at } P
-\]
+    Ans. continuous
 
-#### Higher Order Partial Derivatives
+21. \( \frac{xy}{(x^2+y^2)} \)
 
-Partial derivatives of higher order, of a function \(f(x, y, z)\) are calculated by successive differentiation.
+    Ans. continuous
 
-Thus if \(u = f(x, y, z)\) then:
+22. \( \frac{(x^2-y^2)}{\sqrt{x^2+y^2}} \)
 
-\[
-\frac{\partial^2 u}{\partial x \partial y} = \frac{\partial^2 f}{\partial x \partial y} = \frac{\partial}{\partial x} \left(\frac{\partial f}{\partial y}\right) = f_{xy} = f_{12}
-\]
+    Hint: continuous.
 
-And similarly for other higher-order derivatives.
+## 3.2 PARTIAL DIFFERENTIATION
 
-Note 1: The crossed or mixed partial derivatives \(\frac{\partial^2 u}{\partial y \partial x}\) and \(\frac{\partial^2 u}{\partial x \partial y}\) are in general equal.
+A partial derivative of a function of several variables is the ordinary derivative with respect to one of the variables when all the remaining variables are held constant. Partial differentiation is the process of finding partial derivatives. All the rules of differentiation applicable to functions of a single independent variable are also applicable in partial differentiation with the only difference that when the function is partially with respect to one variable, all the other variables are treated (temporarily) as constants.
 
-\[
-\frac{\partial^2 f}{\partial x \partial y} = \frac{\partial^2 f}{\partial y \partial x}
-\]
+Consider a function \( f(x, y, z) \) of the three independent variables \( x, y, z \) (refer Fig. 3.1).
 
-Note 2: In the subscript notation, the subscripts are written in the same order in which differentiation is carried out.
+1. Keeping \( y \) and \( z \) constant and varying only \( x \), the partial derivative of \( f \) with respect to \( x \) is denoted by
 
-Note 3: A function of two variables has two first-order derivatives, four second-order derivatives, and two \(n^{th}\) order derivatives.
+    \[
+    f_x = \frac{\partial f}{\partial x} = \lim_{\Delta x \to 0} \frac{f(x+\Delta x, y, z) - f(x, y, z)}{\Delta x}
+    \]
 
-#### Worked Out Examples
+    and is called the partial derivative of \( f \) with respect to \( x \).
 
-**Example 1:** Find the first-order partial derivatives \(\frac{\partial u}{\partial x}\) and \(\frac{\partial u}{\partial y}\) when:
+    Partial derivatives of \( f \) with respect to \( y \) and \( z \) can be defined similarly and are denoted by \( f_y \) and \( f_z \).
 
-a) \(u = e^{x \cos y}\)
+    **Notation:** The partial derivative is also denoted by \( D_1f \), \( D_2f \), \( D_3f \), or \( D_xf \), \( D_yf \), \( D_zf \) where the subscripts \( x, y, z \) indicate the variable w.r.t. which the partial differentiation is carried out. Thus
+   
 
-b) \(u = \tan^{-1} \frac{y}{x}\)
-
-c) \(u = \ln \left(x^2 + y^2\right)\)
 
 ---
 ### PARTIAL DIFFERENTIATION — 3.7
