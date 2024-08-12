@@ -415,7 +415,91 @@ b) \(u = \tan^{-1} \frac{y}{x}\)
 c) \(u = \ln \left(x^2 + y^2\right)\)
 
 ---
+### 3.8 HIGHER ENGINEERING MATHEMATICS—II
 
+#### Solution:
+
+\[
+u = e^{\alpha t} (\text{cos }a \ln r) \quad (1)
+\]
+
+\[
+u_{rr} = e^{\alpha t} \left[ \frac{-1}{r^2} \sin(a \ln r) + \frac{\cos(a \ln r)}{r^2} \right] \quad (2)
+\]
+
+\[
+u_{\theta\theta} = -ae^{\alpha t} \sin(a \ln r) \quad (3)
+\]
+
+\[
+u_{t} = \alpha e^{\alpha t} \cos(a \ln r) \quad (4)
+\]
+
+using (1), (2), and (3)
+
+\[
+u_{rr} + \frac{1}{r^2}u_{\theta\theta} = e^{\alpha t} \left[\frac{ae^{\alpha t}}{r^2} \sin(a \ln r) - \frac{a^2}{r^2} \right] + \left(- \frac{ae^{\alpha t}}{r^2} \sin(a \ln r)\right) + \left(\frac{\alpha^2 e^{\alpha t}}{r^2}\right) = 0
+\]
+
+#### Example 6: 
+
+If \( u = \ln(x^3 + y^3 - \frac{x^2y - xy^2}{x^2+y^2}) \), then show that \( u_{xx} + 2u_{xy} + u_{yy} = 0 \)
+
+**Solution:**
+
+\[
+u_x = \frac{3x^2 - 2xy - y^2}{(x^3 + y^3 - x^2y - xy^2) - \frac{xy(x+y)}{(x^2 + y^2)}} \quad (1)
+\]
+
+\[
+u_y = \frac{3y^2 - 2xy - x^2}{(x^3 + y^3 - x^2y - xy^2) - \frac{xy(x+y)}{(x^2 + y^2)}} \quad (2)
+\]
+
+Adding (1) and (2), we get
+
+\[
+u_x + u_y = \frac{(3x^2 - 2xy - y^2) + (3y^2 - 2xy - x^2)}{(x^3 + y^3 - x^2y - xy^2)} = \frac{2(x+y)(x-y)}{x^2 + y^2} + 2xy \quad (3)
+\]
+
+Now
+
+\[
+u_{xx} + 2u_{xy} + u_{yy} = \frac{\partial^2 u}{\partial x^2} + 2 \frac{\partial^2 u}{\partial x \partial y} + \frac{\partial^2 u}{\partial y^2} = 0
+\]
+
+---
+
+### EXERCISE
+
+1. Find the first order partial derivatives of:
+    - a. \( u = x+y \)
+    - b. \( u = \ln(x + \sqrt{x^2 - y^2}) \)
+    - c. \( u = \sin y \)
+    - d. \( u = x^y \)
+
+**Ans.**
+- a. \( u_x = 1 \), \( u_y = 1 \)
+- b. \( u_x = \frac{1}{x + \sqrt{x^2 - y^2}} \times \left(1 + \frac{x}{\sqrt{x^2 - y^2}}\right) \), \( u_y = \frac{-y}{(x + \sqrt{x^2 - y^2}) \sqrt{x^2 - y^2}} \)
+- c. \( u_x = 0 \), \( u_y = \cos y \)
+- d. \( u_x = yx^{y-1} \log x \), \( u_y = x^y \log x \)
+
+2. Find the partial derivative of the given function w.r.t. each variable:
+    - a. \( f(x, y, z) = \sin^{-1}(y/z) \)
+    - b. \( f(x, y, u, w) = (u^2 - w^2)\sin^{-1}(y/x) \)
+    - c. \( f(x, y, r, s) = \sin 2x \sin 3y \cos 4s \)
+    - d. \( f(x, y, r, s) = 4\sin 3y \sin 4s \)
+
+**Ans.**
+- a. \( f_x = 0 \), \( f_y = \frac{1}{z} \), \( f_z = \frac{-y}{z^2 \sqrt{1 - y^2/z^2}} \)
+- b. \( f_u = 2u \sin^{-1}(y/x) \), \( f_w = -2w \sin^{-1}(y/x) \)
+- c. \( f_r = 2 \cos 2x \cos 3r \), \( f_s = 3 \cos 3y \cos 4s \)
+- d. \( f_r = 3 \sin 2r \sin 3r \), \( f_s = 4\sin 3y \sin 4s \)
+
+3. If \( w = \ln(2x + 2y) \text{ and } u = 2x(y - 2y) \), prove that 
+
+\[
+\frac{\partial^2 w}{\partial x \partial y} = \frac{\partial^2 w}{\partial y^2}
+\]
  ## PARTIAL DIFFERENTIATION — 3.9
 
 4. Verify that \( w_{xy} = w_{yx} \) when 
